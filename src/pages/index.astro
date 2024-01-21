@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Badge from "../components/Badge.astro";
+import Linkedin from "../components/icons/Linkedin.astro";
+import Github from "../components/icons/Github.astro";
+import Instagram from "../components/icons/Instagram.astro";
+import Mail from "../components/icons/Mail.astro";
+import Academic from "../components/icons/Academic.astro";
+import Code from "../components/icons/Code.astro";
+import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout 
+  title="Portfolio - Christian Siles, Full Stack Web Developer"
+  description="Full Stack Web Developer, from Buenos Aires, Argentina. Specialized in web applications.">
+  <main>
+    <SectionContainer class="py-44 pb-28">
+    <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hello, I'm Christian
+        <div class="flex justify-center items-center">
+          <a
+            class="flex gap-x-2"
+            href="https://www.linkedin.com/in/christian-siles-11246328a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Badge>Available to work</Badge>
+          </a>
+        </div>
+      </h1>
+      <h2 class="text-3xl opacity-80 text-wrap">
+        Full Stack Web Developer, from Buenos Aires,
+        <span class="text-blue-400">Argentina</span>. Specialized in web
+        applications.
+      </h2>
+      <nav class="flex gap-x-2 mt-8">
+        <a
+          class="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition"
+          href="https://www.linkedin.com/in/christian-siles-11246328a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin class="w-8 h-8" /> LinkedIn
+        </a>
+        <a
+          class="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition"
+          href="https://github.com/ChristianCoC"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github class="w-8 h-8" /> GitHub
+        </a>
+        <a
+          class="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition"
+          href="https://www.instagram.com/cjames_sm/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Instagram class="w-8 h-8" /> Instagram
+        </a>
+        <a class="rounded-full border border-white/10 flex justify-center items-center gap-x-2 py-2 px-4 bg-white/5 hover:scale-110 hover:bg-white/10 transition" 
+          href="mailto:christianelmillo81@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <Mail class="w-8 h-8" /> Email
+        </a>
+      </nav>
+    </SectionContainer> 
+    <SectionContainer id="experience">
+      <h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
+        <Academic class="size-10"/>
+        Academic experience
+      </h2>
+      <Experience />
+    </SectionContainer>
+    <SectionContainer id="projects">
+      <h2 class="text-3xl font-semibold mb-8 flex gap-x-4 items-center">
+        <Code class="size-10"/>
+        Projects 
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style></style>

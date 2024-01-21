@@ -1,0 +1,34 @@
+---
+import ExperienceItems from "./ExperienceItems.astro";
+
+const EXPERIENCE = [
+  {
+    date: "June 2021",
+    title: "Programming",
+    description:
+      "Programming Concepts: Throughout my academic journey, I have gained a profound understanding of programming fundamentals. My focus has spanned from basic concepts to more advanced aspects, excelling in problem-solving and code optimization. Object-Oriented Programming: I have developed strong skills in object-oriented programming (OOP), applying principles such as encapsulation and inheritance to design modular and maintainable systems. My experience extends beyond theory; I have applied this knowledge in practical projects, delivering efficient and scalable solutions. Functional Programming: Exploring functional programming, I have gained an innovative perspective in problem-solving. Working with concepts like higher-order functions and immutability, I have developed the ability to approach development challenges from a more flexible and creative standpoint. In summary, my academic background in programming encompasses both fundamental and advanced approaches, including both object-oriented programming and functional programming. I am well-prepared to effectively apply this knowledge in practical projects, contributing to the development of robust and efficient solutions.",
+  },
+  {
+    date: "December 2022",
+    title: "Web Development, Front End",
+    description:
+        "Frontend Web Developer: Throughout my academic and practical journey, I have cultivated specialized skills as a frontend web developer, excelling in the use of essential technologies for creating engaging and functional user interfaces. HTML, CSS, and JavaScript: My strong command of HTML, CSS, and JavaScript has allowed me to build solid foundations for web development. I am proficient in creating semantic page structures, designing appealing styles, and enhancing user interactivity through JavaScript. Frameworks and Libraries: I have worked with various frameworks and libraries that drive modern web development. These include Bootstrap, providing an efficient and responsive foundation, and Vue, Angular, and React, which are popular frameworks for building interactive and dynamic user interfaces. Astro and Node.js: My expertise extends to technologies such as Astro and Node.js, expanding my capabilities in web development. Astro enables me to create fast and efficient websites, while Node.js empowers me to build server-side applications and handle asynchronous operations effectively. In summary, as a frontend web developer, my skill set spans from the essential foundations of HTML, CSS, and JavaScript to the advanced implementation of frameworks like Vue, Angular, and React, along with innovative technologies like Astro and Node.js. I am prepared to create impactful and functional web experiences.",
+  },
+  {
+    date: "December 2023",
+    title: "Web Development, Back End",
+    description:
+      "Backend Web Developer: My experience as a backend web developer has revolved around handling fundamental technologies for building and managing server logic, database manipulation, and efficient collaboration in development projects. Python and SQL: Proficiency in Python has empowered me to develop robust and scalable backend applications. I have utilized Python to implement server logic, manage routes and controllers, and interact with databases. Regarding SQL, I have experience in designing and optimizing queries, as well as efficiently managing relational databases. NPM, Git, and GitHub: In my day-to-day practice, I have worked with essential tools such as NPM for dependency management, Git for version control, and GitHub for collaboration and repository management. These tools are crucial for maintaining an efficient and collaborative workflow, ensuring code integrity, and facilitating teamwork. In summary, as a backend web developer, I have honed my skills in Python and SQL to build robust backend applications. Additionally, my familiarity with tools like NPM, Git, and GitHub ensures efficient and collaborative development in web projects. I am ready to tackle backend challenges and contribute to the success of complex web projects.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-4">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItems {...experience} />
+      </li>
+    ))
+  }
+</ol>
